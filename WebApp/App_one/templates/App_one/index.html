@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>App_one</title>
+        <link rel="stylesheet" type="text/css" href="../../static/App_one/index.css"/>
+    </head> 
+    <body>
+        {% if message == 'Hey newbie, Welcome!'%}
+            {{message}}    
+            <h1> Are you ready for the app_one?</h1>
+        {% else %}
+            <h1>{{message}}</h1>
+        {% endif %}
+
+        <div class="form">
+            <form method="post" action="/welcome">
+                {% csrf_token %}
+                <input type="text" name="txt" value="Enter your name"><br>
+                <input type="submit" value="Submit"; style="background:black; color:red; font-weight:300; margin-top:10px;">
+            </form>
+        </div>
+    </body>   

@@ -1,0 +1,45 @@
+body{
+    margin:5px;
+    padding:3px;
+}
+
+h1{
+    font-weight:inherit;
+}
+
+input[type="submit"]{
+    width:100px;
+    padding:10px;
+}
+
+input[type="text"]{
+    width: 350px;
+}
+input[type="button"]{
+    font-family: Arial, Helvetica, sans-serif;
+    background: azure;
+}
+
+.row{
+    width:100%;
+    margin:0.1%;
+    padding:0.5%;
+}
+
+.col-4{
+    max-block-size:33.33%;
+    margin:1px;
+    padding:1px;
+}
+.image{
+    display:flex;
+    background: skyblue;
+}
+
+.error{
+    color:red;
+    margin:1px;
+    padding:5px;
+    font-size: 25px;
+    font-weight:bolder;
+}
